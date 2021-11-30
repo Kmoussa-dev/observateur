@@ -7,9 +7,23 @@ public class DonneesMeteo implements Sujet{
     private float humidite;
     private float pression;
 
+
     public DonneesMeteo(){
         observateurs=new ArrayList<Observateur>();
     }
+
+    public float getTemperature() {
+        return temperature;
+    }
+
+    public float getHumidite() {
+        return humidite;
+    }
+
+    public float getPression() {
+        return pression;
+    }
+
     @Override
     public void enregistrerObservateur(Observateur o) {
         observateurs.add(o);
